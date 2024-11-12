@@ -54,7 +54,7 @@ I have 2 virtual machines running in the same Vnet/resource group. One is meant 
 <hr>
 <h3>Creating Organizational Units (OU)</h3>
 
-- creating  3 organization units in Active Directory Users and Computers (ADUC)
+- Creating  3 organization units in Active Directory Users and Computers (ADUC)
   - _EMPLOYEES
   - _ADMINS
   - _CLIENTS
@@ -68,5 +68,44 @@ I have 2 virtual machines running in the same Vnet/resource group. One is meant 
 <h3>Creating a Domain Admin user</h3>
 
 - Creating Jane Doe's user as Domain Admin under _ADMINS OU
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 3 56 00 PM" src="https://github.com/user-attachments/assets/9e295404-284d-4218-8fa4-5f94e0e6238f"   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 3 56 46 PM" src="https://github.com/user-attachments/assets/3b1f4e87-fcaf-42cc-9390-a0f963b33c18">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 3 57 19 PM" src="https://github.com/user-attachments/assets/b0ebff9e-3519-4495-99f2-a3b791e68a21">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 10 28 PM" src="https://github.com/user-attachments/assets/45f6a069-e268-4c9c-be48-1e4b7c7fed6a">
+   </p>
+
+- Adding janed_admin to the “Domain Admins” Security Group
+    <p><img width="90%" alt="Screenshot 2024-11-11 at 5 12 50 PM" src="https://github.com/user-attachments/assets/2300090e-af9f-46f7-85a0-45882a731655">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 13 27 PM" src="https://github.com/user-attachments/assets/bbf6041f-245c-45d8-a66e-f618cfa8dced">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 15 56 PM" src="https://github.com/user-attachments/assets/1f1507d0-f38b-4848-80d7-3c6532b95e31">
+   </p>
+<hr>
+<h3>Joining a client to the domain</h3>
+
+- Joining client-1 to the domain (mydomain.com)
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 42 26 PM" src="https://github.com/user-attachments/assets/4896d251-6132-4134-8592-5dcb03c993dd">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 43 13 PM" src="https://github.com/user-attachments/assets/0ced3bba-b91b-47e9-bd9c-413a2ddabab7">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 44 41 PM" src="https://github.com/user-attachments/assets/e6e54a5f-0e9b-4cf9-b7dd-0acaf36514fe">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 46 56 PM" src="https://github.com/user-attachments/assets/b29a4db0-ee40-46f8-8b99-0fce9ae46fde">
+   </p>
+   <p><img width="90%" alt="Screenshot 2024-11-11 at 5 47 37 PM" src="https://github.com/user-attachments/assets/a86c8d2a-a754-4cc5-ad08-50b39cb496a6">
+   </p>
+- Moving client-1 to _CLIENTS OU in ADUC
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 54 56 PM" src="https://github.com/user-attachments/assets/fbd28a5e-ee2f-4ee7-bd71-deaba0dbed2f">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 56 11 PM" src="https://github.com/user-attachments/assets/73bbf25a-0a65-4360-8855-d28bb2fa6678">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-11 at 5 57 03 PM" src="https://github.com/user-attachments/assets/8f53344b-5dff-40ce-88c0-0dcfe721ddd7">
+   </p>
+   <hr>
+<h3>Setting up Remote Desktop for non-admin users on client-1</h3>
+
+- Allowing “domain users” access to remote desktop in System
   <p></p>
-  
