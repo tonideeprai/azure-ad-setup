@@ -12,6 +12,7 @@ This lab shows how I setup, install, and configure Active Directory and how I cr
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
+- Command Line Interface
 
 <h2>Operating Systems Used </h2>
 
@@ -105,7 +106,31 @@ I have 2 virtual machines running in the same Vnet/resource group. One is meant 
   <p><img width="90%" alt="Screenshot 2024-11-11 at 5 57 03 PM" src="https://github.com/user-attachments/assets/8f53344b-5dff-40ce-88c0-0dcfe721ddd7">
    </p>
    <hr>
-<h3>Setting up Remote Desktop for non-admin users on client-1</h3>
+<h3>Setting up Remote Desktop for non-admin users</h3>
 
-- Allowing “domain users” access to remote desktop in System
-  <p></p>
+- Allowing “domain users” access to remote desktop in System > Remote Desktop (client-1)
+  <p><img width="90%" alt="Screenshot 2024-11-13 at 9 17 14 AM" src="https://github.com/user-attachments/assets/f33b6d1c-a264-42cc-89ed-18dce3de5097">
+   </p>
+- Non-admin users can now log into client-1
+  <p><img width="1511" alt="Screenshot 2024-11-13 at 9 18 27 AM" src="https://github.com/user-attachments/assets/94cf5bdc-dff2-4c95-ba66-35197b9912b5">
+   </p>
+<hr>
+<h3>Generating users</h3>
+
+- Creating .ps1 file in dc-1 machine with the  <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1">script</a> to generate users in PowerShell ISE ( as an administrator)
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 1 30 09 PM" src="https://github.com/user-attachments/assets/9722adc5-f880-477b-90c1-aedf7e089747">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 1 36 12 PM" src="https://github.com/user-attachments/assets/ab79a86a-27d7-4d20-8868-d0d74a337b59">
+   </p>
+- Checking the newly generated users in ADUC
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 1 37 55 PM" src="https://github.com/user-attachments/assets/b5f8a1f3-328b-41af-ad89-0add1d9d7e7c">
+   </p>
+- Attemping to login with a user account
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 1 42 29 PM" src="https://github.com/user-attachments/assets/56d8a7a6-50b0-4f64-ba0f-cc2c4f50ca19">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 1 45 10 PM" src="https://github.com/user-attachments/assets/4c26ec9a-2efc-4e6a-b744-9ea6a5c05303">
+</p>
+
+- Checking the username
+   <p><img width="90%" alt="Screenshot 2024-11-14 at 1 46 35 PM" src="https://github.com/user-attachments/assets/3188a8ff-cb47-47e8-ba85-686f99ff8d02">
+</p>
