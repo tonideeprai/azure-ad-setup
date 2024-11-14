@@ -134,3 +134,7 @@ I have 2 virtual machines running in the same Vnet/resource group. One is meant 
 - Checking the username
    <p><img width="90%" alt="Screenshot 2024-11-14 at 1 46 35 PM" src="https://github.com/user-attachments/assets/3188a8ff-cb47-47e8-ba85-686f99ff8d02">
 </p>
+<hr>
+<h3>Configuring Group Policy</h3>
+
+- Configuring password policy 
