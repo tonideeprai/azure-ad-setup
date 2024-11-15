@@ -137,4 +137,14 @@ I have 2 virtual machines running in the same Vnet/resource group. One is meant 
 <hr>
 <h3>Configuring Group Policy</h3>
 
-- Configuring password policy 
+- Editing Account Lockout Policy in Group Policy Management Editor (dc-1)
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 5 44 01 PM" src="https://github.com/user-attachments/assets/aa4c646c-a64e-4550-933d-5859c83a5b82">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 5 45 54 PM" src="https://github.com/user-attachments/assets/92062101-1e95-4597-afd8-f60a71ae0d6c">
+   </p>
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 5 47 50 PM" src="https://github.com/user-attachments/assets/bedf88c3-1c12-470d-8b55-f615f2c17214">
+   </p>
+
+- Updating the new policy
+  <p><img width="90%" alt="Screenshot 2024-11-14 at 5 51 00 PM" src="https://github.com/user-attachments/assets/8d7e25d1-a833-4791-811a-93d66934e62d">
+</p>
